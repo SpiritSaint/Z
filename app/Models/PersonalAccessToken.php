@@ -2,16 +2,13 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Str;
+use Laravel\Sanctum\PersonalAccessToken as BasePersonalAccessToken;
 
-class Device extends Model
+class PersonalAccessToken extends BasePersonalAccessToken
 {
-    use HasFactory;
-
     /**
      * @var string
      */
@@ -40,16 +37,9 @@ class Device extends Model
     }
 
     /**
-     * @return HasMany
+     * @return MorphTo
      */
-    public function locations() : HasMany {
-        return $this->hasMany(Location::class, 'device_uuid', 'uuid');
-    }
-
-    /**
-     * @return BelongsToMany
-     */
-    public function geofences() : BelongsToMany {
-        return $this->belongsToMany(Geofence::class, 'device_geofence', 'device_uuid', 'geofence_uuid', 'uuid', 'uuid');
+    public function tokenable() : MorphTo {
+        return $this->morphTo('tokenable', "tokenable_type", "tokenable_uuid");
     }
 }
