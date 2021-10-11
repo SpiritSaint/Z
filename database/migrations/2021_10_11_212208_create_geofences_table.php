@@ -15,6 +15,8 @@ class CreateGeofencesTable extends Migration
     {
         Schema::create('geofences', function (Blueprint $table) {
             $table->string('uuid')->primary();
+            $table->string('name');
+            $table->text('description')->nullable();
             $table->polygon('shape')->nullable();
             $table->timestamps();
         });
