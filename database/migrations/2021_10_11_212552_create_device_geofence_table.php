@@ -13,7 +13,7 @@ class CreateDeviceGeofenceTable extends Migration
      */
     public function up()
     {
-        Schema::table('device_geofence', function (Blueprint $table) {
+        Schema::create('device_geofence', function (Blueprint $table) {
             $table->string('device_uuid')->index();
             $table->string('geofence_uuid')->index();
             $table->timestamps();
