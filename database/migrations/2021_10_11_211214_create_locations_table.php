@@ -14,7 +14,7 @@ class CreateLocationsTable extends Migration
     public function up()
     {
         Schema::create('locations', function (Blueprint $table) {
-            $table->string('uuid')->index()->unique();
+            $table->string('uuid')->primary();
             $table->string('device_uuid')->index()->unique();
             $table->string('geofence_uuid')->index()->nullable();
             $table->string('event');
