@@ -25,7 +25,7 @@ class DeviceFactory extends Factory
         return [
             'uuid' => Str::uuid(),
             'user_uuid' => Str::uuid(),
-            'name' => $this->faker->text(19),
+            'name' => "{$this->faker->name}'s " . $this->faker->randomElements(['Phone', 'Notebook', 'Computer']),
         ];
     }
 }
