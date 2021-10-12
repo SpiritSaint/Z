@@ -23,7 +23,6 @@ class DeviceFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid(),
             'name' => "{$this->faker->name}'s " . $this->faker->randomElement(['Phone', 'Notebook', 'Computer']),
         ];
     }

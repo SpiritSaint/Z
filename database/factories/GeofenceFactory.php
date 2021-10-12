@@ -23,7 +23,6 @@ class GeofenceFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid(),
             'name' => $this->faker->text(19),
         ];
     }

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Grimzy\LaravelMysqlSpatial\Eloquent\SpatialTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -9,7 +10,7 @@ use Illuminate\Support\Str;
 
 class Location extends Model
 {
-    use HasFactory;
+    use HasFactory, SpatialTrait;
 
     /**
      * @var string
@@ -25,6 +26,13 @@ class Location extends Model
      * @var bool
      */
     public $incrementing = false;
+
+    /**
+     * @var array
+     */
+    protected $spatialFields = [
+        'coords'
+    ];
 
     /**
      * @return void

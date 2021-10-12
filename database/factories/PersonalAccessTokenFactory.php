@@ -26,7 +26,6 @@ class PersonalAccessTokenFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Str::uuid(),
             'tokenable_type' => $this->faker->randomElement([
                 Device::class,
                 User::class,

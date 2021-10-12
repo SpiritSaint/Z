@@ -15,9 +15,9 @@ class CreateLocationsTable extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->string('uuid')->primary();
-            $table->string('device_uuid')->index()->unique();
+            $table->string('device_uuid')->index()->nullable();
             $table->string('geofence_uuid')->index()->nullable();
-            $table->string('event');
+            $table->string('event')->nullable();
             $table->boolean('is_moving');
             $table->point('coords');
             $table->double('altitude');
