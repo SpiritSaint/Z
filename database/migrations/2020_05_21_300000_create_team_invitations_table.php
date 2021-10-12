@@ -14,7 +14,7 @@ class CreateTeamInvitationsTable extends Migration
     public function up()
     {
         Schema::create('team_invitations', function (Blueprint $table) {
-            $table->id();
+            $table->string('uuid')->primary();
             $table->string('team_uuid');
             $table->string('email');
             $table->string('role')->nullable();

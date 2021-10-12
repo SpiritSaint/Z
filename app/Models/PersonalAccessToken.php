@@ -30,8 +30,7 @@ class PersonalAccessToken extends BasePersonalAccessToken
     /**
      * @return void
      */
-    protected static function boot()
-    {
+    protected static function boot() {
         parent::boot();
 
         static::creating(function (Model $model) {
@@ -43,6 +42,6 @@ class PersonalAccessToken extends BasePersonalAccessToken
      * @return MorphTo
      */
     public function tokenable() : MorphTo {
-        return $this->morphTo('tokenable', "tokenable_type", "tokenable_uuid");
+        return $this->morphTo('tokenable', 'tokenable_type', 'tokenable_uuid');
     }
 }

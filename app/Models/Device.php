@@ -31,8 +31,7 @@ class Device extends Model
     /**
      * @return void
      */
-    protected static function boot()
-    {
+    protected static function boot() {
         parent::boot();
 
         static::creating(function (Model $model) {
