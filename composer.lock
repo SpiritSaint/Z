@@ -2740,21 +2740,21 @@
         },
         {
             "name": "nette/schema",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "f5ed39fc96358f922cedfd1e516f0dadf5d2be0d"
+                "reference": "9a39cef03a5b34c7de64f551538cbba05c2be5df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/f5ed39fc96358f922cedfd1e516f0dadf5d2be0d",
-                "reference": "f5ed39fc96358f922cedfd1e516f0dadf5d2be0d",
+                "url": "https://api.github.com/repos/nette/schema/zipball/9a39cef03a5b34c7de64f551538cbba05c2be5df",
+                "reference": "9a39cef03a5b34c7de64f551538cbba05c2be5df",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "^3.1.4 || ^4.0",
-                "php": ">=7.1 <8.1"
+                "nette/utils": "^2.5.7 || ^3.1.5 ||  ^4.0",
+                "php": ">=7.1 <8.2"
             },
             "require-dev": {
                 "nette/tester": "^2.3 || ^2.4",
@@ -2796,9 +2796,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/schema/issues",
-                "source": "https://github.com/nette/schema/tree/v1.2.1"
+                "source": "https://github.com/nette/schema/tree/v1.2.2"
             },
-            "time": "2021-03-04T17:51:11+00:00"
+            "time": "2021-10-15T11:40:02+00:00"
         },
         {
             "name": "nette/utils",
@@ -5798,6 +5798,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
@@ -5915,12 +5916,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SpiritSaint/jetstream.git",
-                "reference": "4f87044c3e30ce84867be30d26fa2adbcf4cb123"
+                "reference": "8db85dc361ad6c275c3bf15182381a8e969c9fca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SpiritSaint/jetstream/zipball/4f87044c3e30ce84867be30d26fa2adbcf4cb123",
-                "reference": "4f87044c3e30ce84867be30d26fa2adbcf4cb123",
+                "url": "https://api.github.com/repos/SpiritSaint/jetstream/zipball/8db85dc361ad6c275c3bf15182381a8e969c9fca",
+                "reference": "8db85dc361ad6c275c3bf15182381a8e969c9fca",
                 "shasum": ""
             },
             "require": {
@@ -5974,7 +5975,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2021-10-14T20:06:06+00:00"
+            "time": "2021-10-16T20:37:52+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
