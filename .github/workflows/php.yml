@@ -28,4 +28,4 @@ jobs:
       - name: Schemas
         run: php artisan migrate
       - name: Testing
-        run: vendor/bin/phpunit
+        run: vendor/bin/pest
